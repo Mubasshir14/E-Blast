@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="/assets/logo.png" />
+    <!-- tailwind and css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/6d4eb52877.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: "#001529",
+              aqua: "#29ABE2",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      @import url("https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap");
+
+      body {
+        background-color: #001529;
+      }
+
+      .clash-display {
+        font-family: "Clash Display", sans-serif;
+      }
+
+      .hero-text {
+        letter-spacing: 0.5px;
+      }
+
+      .showcase-card {
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      }
+
+      .poppins-thin {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+
+      .poppins-extralight {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+
+      .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .poppins-extrabold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+      }
+
+      .poppins-black {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+
+      .eng {
+        color: rgb(255, 255, 255);
+        font-family: Poppins;
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 15px;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+
+      .guiness {
+        font-family: Clash Display;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 116%;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+
+      .email {
+        color: rgb(255, 255, 255);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+
+      .website {
+        color: rgb(255, 255, 255);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 3%;
+        text-align: left;
+      }
+
+      .hammed {
+        color: rgb(255, 255, 255);
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: center;
+      }
+      .ge {
+        color: rgb(255, 255, 255);
+        font-family: Poppins;
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+
+      .geh {
+        font-family: TT Hoves Pro Trl Expanded;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 116%;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+
+      .gah {
+        color: rgb(255, 255, 255);
+        font-family: TT Hoves Pro Trl Expanded;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 116%;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+
+      .whether {
+        color: rgb(255, 255, 255);
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: center;
+      }
+      .banner-title {
+        color: rgb(255, 255, 255);
+        font-family: Clash Display;
+        font-size: 23px;
+        font-weight: 600;
+        line-height: 122%;
+        letter-spacing: 0%;
+        text-align: left;
+        text-transform: uppercase;
+      }
+      .banner-p {
+        color: rgb(255, 255, 255);
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 15px;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+    </style>
+  </head>
+
+  <body class="bg-navy text-white w-[600px] mx-auto">
+    <!-- logo -->
+    <header class="container mx-auto px-4 py-6">
+      <div class="flex items-center">
+        <a href="#" class="block">
+          <img
+            src="/assets/Group.png"
+            alt="Hammerhead Aquatics Logo"
+            class="h-16 w-auto"
+          />
+        </a>
+      </div>
+    </header>
+    <!-- banner title -->
+    <section class="container mx-auto px-4 text-right">
+      <div class="max-w-4xl ml-auto">
+        <h2
+          class="text-2xl font-medium mb-4"
+          style="
+            color: rgb(255, 255, 255);
+            font-family: Clash Display;
+            font-size: 23px;
+            font-weight: 400;
+            line-height: 116%;
+            letter-spacing: 0%;
+            text-align: right;
+          "
+        >
+          Meet the Visionaries Behind the
+        </h2>
+        <h1
+          class="text-[35px] text-4xl font-semibold mb-2"
+          style="
+            font-family: Clash Display;
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 122%;
+            letter-spacing: 0%;
+            text-align: right;
+            text-transform: uppercase;
+          "
+        >
+          <span class="text-[#25A8E3]">WORLD'S</span> MOST ICONIC
+        </h1>
+        <h1
+          class="text-[35px] text-4xl font-semibold"
+          style="
+            font-family: Clash Display;
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 122%;
+            letter-spacing: 0%;
+            text-align: right;
+            text-transform: uppercase;
+          "
+        >
+          AQUATIC BUILDS
+        </h1>
+      </div>
+    </section>
+    <!-- hero image -->
+    <section class="w-full px-8 mt-5">
+      <div class="">
+        <div
+          class="lg:col-span-2 p-6 bg-[url('/assets/imsasaage42.png')] bg-no-repeat bg-cover bg-center rounded-2xl text-white"
+        >
+          <div class="relative lg:px- leftAlign lg:pb-10 lg:pt-52">
+            <div class="absolute left-0 h-44 w-1.5 bg-aqua"></div>
+            <div
+              class="bg-gray-200 p-[16px]"
+              style="
+                background: linear-gradient(
+                  270deg,
+                  rgba(0, 0, 0, 0) 29.153%,
+                  rgb(0, 0, 0) 125.103%
+                );
+              "
+            >
+              <h3
+                class="text-2xl banner-title font-bold text-white mb-2 uppercase"
+              >
+                Engineering Aquatic <br />
+                Experiences Worldwide
+              </h3>
+              <p class="w-full font-thin text-white mb-6 poppins-thin">
+                From mega-resort pools to immersive marine exhibits <br />
+                — Hammerhead Aquatics turns vision into liquid reality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- paragraphn title -->
+    <section class="px-8 mt-[23.34px] text-center">
+      <h1 class="text-justify poppins-regular hammed">
+        Hammerhead Aquatics is a global leader in custom aquatic construction.
+        From record-breaking deep diving pools to world-class marine exhibits,
+        we fuse engineering excellence with visionary design. With over 20
+        countries served and a reputation for pushing the boundaries of what's
+        possible, Hammerhead creates aquatic spaces that leave a lasting impact.
+      </h1>
+    </section>
+    <!-- card section -->
+    <section class="w-full px-8 mt-[62.28px]">
+      <div class="border-b-2 border-[#25A8E3]">
+        <div class="flex items-center gap-6">
+          <div>
+            <img
+              src="/assets/1.png"
+              class="w-[260.58px] h-[146px] rounded-t-xl"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col">
+            <h1
+              class="font-clash-display text-2xl font-bold leading-[116%] tracking-[0%] text-left guiness"
+            >
+              Guinness World Record <br />
+              <span class="text-[#25A8E3]">Deep Dive Dubai</span>
+            </h1>
+            <p class="poppins-light mt-3 eng">
+              Engineered the world’s deepest pool at 60.02 meters — a global
+              landmark.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-b-2 border-[#25A8E3] mt-[29.05px]">
+        <div class="flex items-center gap-6">
+          <div>
+            <img
+              src="/assets/glass-bottomed-sky-pool-market-square-tower-houston-texas_dezeen 3.png"
+              class="w-[260.58px] h-[146px] rounded-t-xl"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col">
+            <h1
+              class="font-clash-display text-2xl font-bold leading-[116%] tracking-[0%] text-left guiness"
+            >
+              Sky Pool at
+              <span class="text-[#25A8E3]">
+                Market <br />
+                Square Tower,</span
+              >
+              Houston
+            </h1>
+            <p class="poppins-light mt-3 eng">
+              Designed the iconic glass-bottomed pool cantilevered 500 feet
+              above downtown.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-b-2 border-[#25A8E3] mt-[29.05px]">
+        <div class="flex items-center gap-6">
+          <div>
+            <img
+              src="/assets/image63.png"
+              class="w-[260.58px] h-[146px] rounded-t-xl"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col">
+            <h1
+              class="font-clash-display text-2xl font-bold leading-[116%] tracking-[0%] text-left guiness"
+            >
+              <span class="text-[#25A8E3]">S.E.A. Aquarium, <br /></span>
+              Singapore
+            </h1>
+            <p class="poppins-light mt-3 eng">
+              Helped construct one of the world’s largest aquariums, housing
+              over 100,000 marine animals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!-- info -->
+    <section class="px-12 mt-[42.03px]">
+      <div class="flex items-center">
+        <div class="flex flex-col space-y-2 mr-2 border-r-2 border-white/20">
+          <h1 class="font-bold geh">
+            Global Presence Across <br />
+            <span class="text-aqua">20+ Countries</span>
+          </h1>
+          <p class="ge">
+            Engineered the world’s deepest pool at 60.02 meters — a global
+            landmark.
+          </p>
+        </div>
+        <div class="flex flex-col space-y-2 border-r-2 ml-2 border-white/20">
+          <h1 class="font-bold geh">
+            Featured in <span class="text-aqua">Pool Magazine<br /></span> &
+            Industry Press
+          </h1>
+          <p class="ge">
+            Recognized for innovation in acrylic pool design and mega-projects.
+          </p>
+        </div>
+        <div class="flex flex-col space-y-2 ml-2">
+          <h1 class="font-bold geh">
+            Partners with
+            <span class="text-aqua">World-Class <br /></span> Architects &
+            Developers
+          </h1>
+          <p class="ge">
+            Trusted on some of the most ambitious aquatic builds worldwide.
+          </p>
+        </div>
+      </div>
+    </section>
+     <!-- gallery -->
+    <section class="px-8 mt-[28px]">
+      <div class="flex items-center gap-2">
+        <div class="flex flex-col">
+          <img
+            src="/assets/pools.jpeg"
+            class="rounded-xl w-[187.43px] h-[115.29px]"
+            alt=""
+          />
+          <h1 class="ml-2 gah mt-2">Luxury Pools</h1>
+        </div>
+        <div class="flex flex-col">
+          <img
+            src="/assets/fish.jpeg"
+            class="rounded-xl w-[187.43px] h-[115.29px]"
+            alt=""
+          />
+          <h1 class="ml-2 gah mt-2">Aquarium Marvels</h1>
+        </div>
+        <div class="flex flex-col">
+          <img
+            src="/assets/masterpiece.png"
+            class="rounded-xl w-[187.43px] h-[115.29px]"
+            alt=""
+          />
+          <h1 class="ml-2 gah mt-2">Custom Masterpieces</h1>
+        </div>
+      </div>
+    </section>
+<!-- after gallery paragraph -->
+    <section class="w-full p-8 flex justify-center items-center">
+      <div
+        class="max-w-4xl border border-aqua/30 p-8 text-white text-center"
+        style="
+          border-radius: 10px;
+          background: linear-gradient(
+            151.29deg,
+            rgba(0, 23, 62, 0) 60.739%,
+            rgba(37, 168, 227, 0.3) 109.081%,
+            rgba(37, 168, 227, 0.3) 110.067%
+          );
+        "
+      >
+        <p class="whether">
+          Whether you're developing a cutting-edge resort or designing an
+          unforgettable public attraction, Hammerhead Aquatics is the partner to
+          trust. With decades of experience Jason Jovaag and his team have a
+          commitment to excellence, we're here to bring your most ambitious
+          aquatic visions to life.
+        </p>
+      </div>
+    </section>
+    <!-- footer -->
+    <section
+      class="text-white text-center p-6 rounded-xl w-full max-w-md mx-auto"
+    >
+      <div class="flex flex-col items-center space-y-2">
+        <div class="flex items-center space-x-2">
+          <i class="fa-regular fa-envelope text-aqua"></i>
+          <span class="text-sm email">info@hammerhead-aquatics.com</span>
+        </div>
+
+        <div class="flex items-center space-x-2">
+          <i class="fa-solid fa-phone text-aqua"></i>
+          <span class="text-sm email">702-725-3929</span>
+        </div>
+      </div>
+
+      <div class="mt-4 text-center">
+        <h2
+          class="text-lg font-semibold website text-center"
+          style="
+            color: rgb(255, 255, 255);
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 3%;
+          "
+        >
+          Hammerhead-Aquatics.com
+        </h2>
+        <div class="mt-1 border-b-2 border-blue-400 w-40 mx-auto"></div>
+      </div>
+    </section>
+  </body>
+</html>
